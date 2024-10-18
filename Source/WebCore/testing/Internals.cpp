@@ -4654,7 +4654,7 @@ ExceptionOr<Ref<StaticRange>> Internals::selectedRange()
     auto range = contextDocument()->selection().selection().range();
     if (!range)
         return nullptr;
-    return RefPtr { StaticRange::create(*range) };
+    return StaticRange::create(*range);
 }
 
 void Internals::setSelectionWithoutValidation(Ref<Node> baseNode, unsigned baseOffset, RefPtr<Node> extentNode, unsigned extentOffset)
