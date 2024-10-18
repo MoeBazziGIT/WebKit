@@ -4646,7 +4646,7 @@ ExceptionOr<Ref<DOMRect>> Internals::selectionBounds()
     return DOMRect::create(document->frame()->selection().selectionBounds());
 }
 
-ExceptionOr<RefPtr<StaticRange>> Internals::selectedRange()
+ExceptionOr<Ref<StaticRange>> Internals::selectedRange()
 {
     RefPtr document = contextDocument();
     if (!document)

@@ -808,7 +808,7 @@ public:
 #endif
 
     ExceptionOr<Ref<DOMRect>> selectionBounds();
-    ExceptionOr<RefPtr<StaticRange>> selectedRange();
+    ExceptionOr<Ref<StaticRange>> selectedRange();
     void setSelectionWithoutValidation(Ref<Node> baseNode, unsigned baseOffset, RefPtr<Node> extentNode, unsigned extentOffset);
     void setSelectionFromNone();
 
